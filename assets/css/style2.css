@@ -210,3 +210,27 @@ footer a:hover {
     font-size: 3em !important;
     box-shadow: 1px 5px 5px rgba(107, 107, 107, 0.842);
 }
+
+#interests {
+    background-image: url('chemin/vers/ton/image.jpg'); /* Remplace par le chemin de ton image */
+    background-size: cover;
+    background-position: center;
+    color: white; /* Change la couleur du texte pour qu'il soit visible sur l'image */
+    padding: 30px 0;
+}
+
+.interests-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
+    grid-template-rows: repeat(2, 1fr); /* 2 lignes */
+    gap: 20px; /* Espace entre les éléments */
+    list-style-type: none; /* Enlève les puces */
+    padding: 0; /* Enlève le padding par défaut */
+}
+
+.interests-grid li {
+    background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent pour les items */
+    padding: 20px;
+    border-radius: 8px; /* Coins arrondis */
+    text-align: center; /* Centre le texte */
+}
