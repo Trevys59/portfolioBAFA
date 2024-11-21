@@ -39,3 +39,11 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
     observer.observe(section);
   });
   
+// Sélectionner les éléments
+const burgerMenu = document.getElementById('burger-menu');
+const navLinks = document.getElementById('nav-links');
+
+// Ajouter un écouteur d'événement au clic sur le burger
+burgerMenu.addEventListener('click', () => {
+  navLinks.classList.toggle('show'); // Affiche/masque le menu
+});
