@@ -140,7 +140,7 @@ footer {
 }
 
 /* Mobile Styles */
-@media (max-width: 1000px)/*768px*/ {
+@media (max-width: 1400px)/*768px*/ {
   .burger-menu {
     display: block; /* Affiche le menu burger sur mobile */
   }
