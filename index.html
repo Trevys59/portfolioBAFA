@@ -62,24 +62,35 @@
     <section id="interests">
       <h2>Centres d'Intérêt</h2>
       <div class="card-container">
-        <div class="card">
+        <div class="card" data-title="Taekwondo" data-text="Le Taekwondo est un art martial coréen combinant technique, discipline et respect." data-img="images/taekwondo.jpg">
           <img src="images/taekwondo.jpg" alt="Taekwondo">
           <p>Taekwondo</p>
         </div>
-        <div class="card">
+        <div class="card" data-title="Jeux de rôle" data-text="Les jeux de rôle permettent de développer l'imaginaire et la coopération." data-img="images/jeux_role.jpg">
           <img src="images/jeux_role.jpg" alt="Jeux de rôle">
           <p>Jeux de rôle</p>
         </div>
-        <div class="card">
+        <div class="card" data-title="Cuisine" data-text="La cuisine est un mélange de créativité et de technique pour éveiller les sens." data-img="images/cuisine.jpg">
           <img src="images/cuisine.jpg" alt="Cuisine">
           <p>Cuisine</p>
         </div>
-        <div class="card">
+        <div class="card" data-title="Informatique" data-text="L'informatique est une passion mêlant innovation et résolution de problèmes." data-img="images/informatique.jpg">
           <img src="images/informatique.jpg" alt="Informatique">
           <p>Informatique</p>
         </div>
       </div>
+    
+      <!-- Pop-up structure -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span id="close-popup">&times;</span>
+          <h3 id="popup-title"></h3>
+          <img id="popup-img" src="" alt="">
+          <p id="popup-text"></p>
+        </div>
+      </div>
     </section>
+    
     
 
     <section id="contact">

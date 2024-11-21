@@ -47,3 +47,37 @@ const navLinks = document.getElementById('nav-links');
 burgerMenu.addEventListener('click', () => {
   navLinks.classList.toggle('show'); // Affiche/masque le menu
 });
+
+const cards = document.querySelectorAll('.card');
+const popup = document.getElementById('popup');
+const popupTitle = document.getElementById('popup-title');
+const popupText = document.getElementById('popup-text');
+const popupImg = document.getElementById('popup-img');
+const closePopup = document.getElementById('close-popup');
+
+// Fonction pour afficher le pop-up
+cards.forEach(card => {
+  card.addEventListener('click', () => {
+    const title = card.getAttribute('data-title');
+    const text = card.getAttribute('data-text');
+    const img = card.getAttribute('data-img');
+
+    popupTitle.textContent = title;
+    popupText.textContent = text;
+    popupImg.src = img;
+
+    popup.classList.add('show');
+  });
+});
+
+// Fonction pour fermer le pop-up
+closePopup.addEventListener('click', () => {
+  popup.classList.remove('show');
+});
+
+// Fermer le pop-up en cliquant en dehors
+window.addEventListener('click', (e) => {
+  if (e.target === popup) {
+    popup.classList.remove('show');
+  }
+});
