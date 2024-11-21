@@ -141,7 +141,7 @@ footer {
   section {
     width: 90%;
   }
-  
+
   #nav-links {
     display: none; /* Masque le menu */
     flex-direction: column;
@@ -159,9 +159,15 @@ footer {
     text-align: center;
   }
 
-  .card {
-    width: 100%;
+  #nav-links.show {
+    display: flex;
   }
+
+  .card {
+    width: 90%;
+  }
+  
+  
 }
 
 /* Afficher le menu burger ouvert */
