@@ -271,3 +271,32 @@ footer {
 .popup.show {
   display: block;
 }
+
+/* Section des niveaux de langue */
+.language-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.language {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  font-size: 1.2rem;
+}
+
+.language p {
+  margin: 0;
+  font-weight: bold;
+  color: #333;
+}
+
+.stars {
+  font-size: 1.5rem;
+  color: #FFD700; /* Jaune pour les étoiles */
+  letter-spacing: 2px; /* Espacement entre les étoiles */
+}
