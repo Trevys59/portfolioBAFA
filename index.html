@@ -1,255 +1,79 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Trevys Sarrazyn</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/style2.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Trévys Sarrazyn</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="./assets/js/script.js" defer></script>
 </head>
+
 <body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#education">Diplômes</a></li>
+        <li><a href="#experience">Expériences</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#interests">Centres d'intérêt</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="./index.html">Mon Portfolio</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#about">À propos <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#skills">Compétences</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#exp">Expériences</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>      
-</header>
-
-<main>
+  <main>
     <section id="about">
-        <section id="about" class="container mt-5">
-            <h2>À propos de moi</h2>
-            
-            <p>
-              Je suis animateur passionné et j'ai une expérience dans l'organisation d'activités ludiques et éducatives. 
-              Mon objectif est de créer des environnements d'apprentissage engageants et motivants pour les enfants.
-            </p>
-
-            <!--Centres d'intérêts-->
-            <section id="interests" class="container mt-5">
-              <h2>Mes centres d'intérêts</h2>
-              <div class="interests-grid">
-                  <ul>
-                      <li>Programmation</li>
-                      <li>Sport : Taekwondo (depuis 2012), escalade (pendant 4 ans)</li>
-                      <li>Assistant entraîneur / Coach de Taekwondo</li>
-                      <li>Voyage : Jura, Espagne, Portugal</li>
-                      <li>Jeu de rôle</li>
-                      <li>Cuisiner</li>
-                  </ul>
-              </div>
-          </section>
-
-            <a href="./assets/images/CVTrevysSarrazyn.pdf" class="btn btn-primary" download>Télécharger CV</a>
-            <div>
-              <a href="https://www.linkedin.com/in/trevys-sarrazyn-2507551b1/">LinkedIn</a>
-            </div>
-            <aside>
-              <h3>Parcours scolaire</h3>
-              <ul>
-                  <li>
-                      <strong>Lycée César Baggio</strong><br>
-                      <i>2022 - 2024</i><br>
-                      <em>BTS SNIR (Systèmes Numériques option Informatique et Réseaux)</em><br>
-                      Description des principales matières ou projets marquants : Programmation en C, C++ et Java, développement web, réseaux informatiques, développement d'applications, stage en entreprise, projets de fin d'études sur le développement d'applications mobiles.
-                  </li>
-                  <li>
-                      <strong>Lycée César Baggio</strong><br>
-                      <i>2019 - 2022</i><br>
-                      <em>Baccalauréat Général, spécialités : Mathématiques, NSI (Numériques Sciences de l'Informatique) et Sciences de l'ingénieur</em><br>
-                      Description des principales matières ou projets marquants : Programmation en Python, développement web, réseaux informatiques, mathématiques, sciences de l'ingénieur.
-                  </li>
-              </ul>
-
-              <h3>Diplôme pour le BAFA</h3>
-              <ul>
-                  <li>
-                      <strong>Leo Lagrange</strong><br>
-                      <i>06/2024 - 07/2024</i><br>
-                      <em>BAFA Approfondissement Loisirs et Handicaps</em><br>
-                      <!--Description des principales matières ou projets marquants : Programmation en C, C++ et Java, développement web, réseaux informatiques, développement d'applications, stage en entreprise, projets de fin d'études sur le développement d'applications mobiles.-->
-                  </li>
-                  <li>
-                      <strong>Croix Rouge</strong><br>
-                      <i>08/2023</i><br>
-                      <em>PSC1</em><br>
-                      Prévention et secours civiques de niveau 1
-                  </li>
-              </ul>
-            </aside>
-          </section>          
+      <h1>Trévys Sarrazyn</h1>
+      <p>Étudiant en informatique et animateur BAFA avec une passion pour le taekwondo, la création et l'organisation.</p>
     </section>
-    
+
+    <section id="education">
+      <h2>Diplômes et Formations</h2>
+      <ul>
+        <li><strong>BTS SNIR</strong> - Lycée César Baggio, Lille (2022-2024)</li>
+        <li><strong>BAC Général</strong> - Mention Bien, spécialité Informatique et Sciences (2019-2022)</li>
+        <li><strong>BAFA</strong> - Approfondissement Loisirs et Handicaps (2024)</li>
+        <li><strong>PSC1</strong> - Croix-Rouge, Lille (2023)</li>
+      </ul>
+    </section>
+
+    <section id="experience">
+      <h2>Expériences Professionnelles</h2>
+      <ul>
+        <li>Animateur élémentaire - Vacances Printemps 2024, Caramel Mons-en-Barœul</li>
+        <li>Stagiaire animateur - Vacances Hiver 2024, maternelle</li>
+        <li>Bénévolat - École Taekwondo Monsoise (2022-2025)</li>
+        <li>Bénévolat - Mairie de Mons-en-Barœul (été 2023)</li>
+      </ul>
+    </section>
+
     <section id="skills">
-        <section id="skills" class="container mt-5">
-            <h2 class="text-center mb-4">Compétences</h2>
-            <div class="row">
-              <!-- Langages de Programmation -->
-              <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h5 class="card-title">Langages de Programmation</h5>
-                    <p class="card-text">Python, C, C++, Java, PHP, JavaScript</p>
-                  </div>
-                </div>
-              </div>
-          
-              <!-- Développement Web -->
-              <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h5 class="card-title">Développement Web et API</h5>
-                    <p class="card-text">
-                      <ul>
-                        <li>HTML, CSS, API REST, JSON</li>
-                        <li>Bootstrap, React</li>
-                        <li>API RESTful</li>
-                      </ul>
-                    </p>
-                  </div>
-                </div>
-              </div>
-          
-              <!-- Bases de Données -->
-              <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h5 class="card-title">Bases de Données</h5>
-                    <p class="card-text">
-                      <ul>
-                        <li>SGBD : MySQL</li>
-                        <li>Langage de requête : SQL</li>
-                        <li>Modélisation : MCD, MPD</li>
-                      </ul>
-                    </p>
-                  </div>
-                </div>
-              </div>
-          
-              <!-- Outils -->
-              <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h5 class="card-title">Outils</h5>
-                    <p class="card-text">Git, Visual Studio Code (VSCode), Android Studio, Figma, Suite Office, Gantt Project</p>
-                  </div>
-                </div>
-              </div>
-          
-              <!-- Systèmes -->
-              <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h5 class="card-title">Systèmes d'exploitation (OS)</h5>
-                    <p class="card-text">Windows, Linux (Ubuntu, Debian)</p>
-                  </div>
-                </div>
-              </div>
-          
-              <!-- Virtualisation -->
-              <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h5 class="card-title">Virtualisation</h5>
-                    <p class="card-text">VMware Workstation, Hyper-V</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          
-          
+      <h2>Compétences</h2>
+      <ul>
+        <li>Créativité & imagination</li>
+        <li>Résolution de problèmes</li>
+        <li>Gestion événementielle</li>
+        <li>Informatique</li>
+      </ul>
     </section>
-    
-    <section id="exp">
-        <section id="exp" class="container mt-5">
-            <h2 class="text-center mb-4">Projets</h2>
-            <div class="row">
-              <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card">
-                  <img src="./assets/images/blc/BLC.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Cookie Cliquer</h5>
-                    <p class="card-text">Réalisation d'un cookie cliquer sur le thème du manga blue lock.</p>
-                    <a href="blc.html" class="btn btn-primary">Voir plus</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card">
-                  <img src="./assets/images/siteWordpress/WordPresslogo.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Site Web pour une association sportive</h5>
-                    <p class="card-text">Développement d'un site web vitrine et boutique avec le CMS WordPress en passant de la rédaction 
-                      d'un cahier des charges à la finalisation d'un projet pour une association sportive.</p>
-                    <a href="./index.html#exp" class="btn btn-primary">Voir plus (à venir)</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card">
-                  <img src="./assets/images/pontsConnectes/PontsLinksBanniere.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Ponts connectés</h5>
-                    <p class="card-text">Projet de 6 mois sur la réalisation d'une application mobile de réservation liée à la base de donnée avec un API RESTful, la mise en place de capteur de surveillance d'ouvrage communicant à la base de donnée avec LoRaWAN.
-                      Gestion de projet, Conception de base de donnée.</p>
-                    <a href="./index.html#exp" class="btn btn-primary">Voir plus (à venir)</a>
-                  </div>
-                </div>
-              </div>               
-              <!-- A Rajouter par la suite-->
-            </div>
-          </section>
-          
+
+    <section id="interests">
+      <h2>Centres d'Intérêt</h2>
+      <p>Taekwondo, jeux de rôle, cuisine, informatique.</p>
     </section>
-    
+
     <section id="contact">
-        <section id="contact" class="container mt-5">
-            <h2>Contact</h2>
-            <a href="tel:0766447819">
-              <span class="material-symbols-outlined">
-                call
-              </span>
-            </a>
-            <a href="mailto:trevys.sarrazyn@gmail.com">
-              <span class="material-symbols-outlined">
-                mail
-              </span>
-            </a>
-          </section>
+      <h2>Contact</h2>
+      <p>Email : <a href="mailto:trevys.sarrazyn@gmail.com">trevys.sarrazyn@gmail.com</a></p>
+      <p>Téléphone : 07-66-44-78-19</p>
+      <p>Localisation : Mons-en-Barœul</p>
     </section>
-</main>
+  </main>
 
-
-<footer class="bg-dark text-light text-center py-3">
-    <div>© 2024 Sarrazyn Trevys. Tous droits réservés.</div>
-    <div><a href="./assets/images/CVTrevysSarrazyn.pdf" download>Télécharger CV</a> | <a href="https://github.com/Trevys59">GitHub</a> | <a href="https://www.linkedin.com/in/trevys-sarrazyn-2507551b1/">LinkedIn</a></div>
-</footer>
-
-
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="./assets/js/script.js"></script>
+  <footer>
+    <p>&copy; 2024 Trévys Sarrazyn. Tous droits réservés.</p>
+  </footer>
 </body>
 </html>

@@ -1,40 +1,41 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const contactForm = document.getElementById("contact-form");
-    
-    contactForm.addEventListener("submit", function(event) {
-        event.preventDefault(); // Empêche l'envoi du formulaire
-
-        // Récupération des valeurs du formulaire
-        // Récupération des valeurs du formulaire
-        var name = document.getElementById('name').value;
-        var email = document.getElementById('email').value;
-        var message = document.getElementById('message').value;
-
-        // Validation simple
-        if (name && email && message) {
-            // Ici, Tu peux ajouter une intégration avec un service d'email
-            submitForm();
-            console.log("Nom:", name, "Email:", email, "Message:", message);
-            alert("Merci pour votre message, je vous contacterai bientôt !");
-            // contactForm.reset();  //Décommentez pour réinitialiser le formulaire après l'envoi
-        } else {
-            alert("Veuillez remplir tous les champs.");
-        }
-
-        
+// Smooth scrolling for navigation links
+document.querySelectorAll('nav ul li a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
     });
-    function submitForm() {
-       // Construction de l'URL mailto
-        var mailtoLink = 'mailto:trevys.sarrazyn@gmail.com' // Remplacez par votre adresse e-mail
-                       + '?subject=Contact Form Submission'
-                       + '&body=Nom: ' + encodeURIComponent(name)
-                       + '%0D%0AEmail: ' + encodeURIComponent(email)
-                       + '%0D%0AMessage:%0D%0A' + encodeURIComponent(message);
-    
-        // Ouvrir le client de messagerie
-        window.location.href = mailtoLink;
-    
-        // Prévenir le comportement par défaut du formulaire
-        return false;
-    }
-});
+  });
+
+  // Smooth scrolling for navigation links
+document.querySelectorAll('nav ul li a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    });
+  });
+  
+  // Visibility on scroll for sections
+  const sections = document.querySelectorAll('section');
+  
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+  
+  sections.forEach(section => {
+    observer.observe(section);
+  });
+  
