@@ -111,9 +111,6 @@ footer {
 
 /* Cacher le menu par défaut sur mobile */
 @media (min-width: 1401px)/*768px*/ {
-  .burger-menu {
-    display: block; /* Affiche le menu burger sur mobile */
-  }
 
   #nav-links {
     display: flex;
