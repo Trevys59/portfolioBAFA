@@ -130,6 +130,10 @@ nav ul li a:hover {
     margin: 0 10px;
   }
 
+  #about img {
+    max-width: 50%; /* Limite la largeur de l'image à 50% sur les écrans plus larges */
+  }
+
 }
 
 /* Mobile Styles */
@@ -319,4 +323,19 @@ nav ul li a:hover {
   font-size: 1.5rem;
   color: #FFD700; /* Jaune pour les étoiles */
   letter-spacing: 2px; /* Espacement entre les étoiles */
+}
+
+/* Section About */
+#about {
+  text-align: center; /* Centre le contenu de la section */
+  padding: 20px;
+}
+
+/* Style pour l'image */
+#about img {
+  max-width: 100%; /* L'image s'adapte à la largeur du conteneur */
+  height: auto; /* Maintient les proportions de l'image */
+  border-radius: 10px; /* Ajoute des coins arrondis */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Ajoute une ombre subtile */
+  margin-top: 15px; /* Espace au-dessus de l'image */
 }
