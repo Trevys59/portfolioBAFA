@@ -87,6 +87,22 @@ footer {
   padding: 10px;
 }
 
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #FFD700;
+  transform: scale(1.1);
+  transition: transform 0.3s, color 0.3s;
+}
+
 /* Ordi Styles */
 @media (min-width: 1401px)/*768px*/ {
 
@@ -111,23 +127,7 @@ footer {
     display: flex;
     justify-content: center;
     list-style: none;
-    margin: 0 15px;
-  }
-  
-  /*nav ul li {
-    margin: 0 15px;
-  }*/
-  
-  /*nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }*/
-  
-  nav ul li a:hover {
-    color: #FFD700;
-    transform: scale(1.1);
-    transition: transform 0.3s, color 0.3s;
+    margin: 0 10px;
   }
 
 }
