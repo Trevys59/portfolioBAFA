@@ -38,6 +38,7 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
       });
     }
 
+    // Fermer le menu lorsque l'utilisateur clique sur un lien
     navLinkItems.forEach(link => {
       link.addEventListener('click', () => {
         navLinks.classList.remove('show'); // Masquer le menu
