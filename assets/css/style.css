@@ -24,28 +24,6 @@ header {
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Ajout d'une ombre pour mieux la démarquer */
 }
 
-nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-}
-
-nav ul li {
-  margin: 0 15px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav ul li a:hover {
-  color: #FFD700;
-  transform: scale(1.1);
-  transition: transform 0.3s, color 0.3s;
-}
-
 main {
   display: flex;
   flex-direction: column;
@@ -109,7 +87,7 @@ footer {
   padding: 10px;
 }
 
-/* Cacher le menu par défaut sur mobile */
+/* Ordi Styles */
 @media (min-width: 1401px)/*768px*/ {
 
   #nav-links {
@@ -127,6 +105,28 @@ footer {
     text-decoration: none;
     color: white;
     font-weight: bold;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    color: #FFD700;
+    transform: scale(1.1);
+    transition: transform 0.3s, color 0.3s;
   }
 
 }
