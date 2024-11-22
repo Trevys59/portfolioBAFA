@@ -137,13 +137,10 @@ footer {
     display: block; /* Affiche le menu burger sur mobile */
   }
 
-  /*nav ul {
+  nav ul {
     flex-direction: column;
-  }
-
-  nav ul li {
     margin: 10px 0;
-  }*/
+  }
 
   section {
     width: 90%;
