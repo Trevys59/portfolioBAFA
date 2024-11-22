@@ -170,8 +170,17 @@ nav ul li a:hover {
     font-weight: bold;
   }
 
+  /* Afficher le menu burger ouvert */
   #nav-links.show {
     display: flex;
+    flex-direction: column;
+    background: #007BFF;
+    position: absolute;
+    top: 60px; /* Ajuste pour apparaître sous le header */
+    right: 0;
+    width: 100%; /* Occupe toute la largeur */
+    padding: 10px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   }
 
   .card, .card2 {
@@ -181,18 +190,18 @@ nav ul li a:hover {
   
 }
 
-/* Afficher le menu burger ouvert */
+/* Afficher le menu burger ouvert *//*
 #nav-links.show {
   display: flex;
   flex-direction: column;
     background: #007BFF;
     position: absolute;
-    top: 60px; /* Ajuste pour apparaître sous le header */
+    top: 60px; 
     right: 0;
-    width: 100%; /* Occupe toute la largeur */
+    width: 100%; 
     padding: 10px 0;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
+}*/
 
 /* Conteneur des cartes */
 .card-container {
