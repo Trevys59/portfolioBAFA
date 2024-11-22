@@ -110,20 +110,28 @@ footer {
 }
 
 /* Cacher le menu par défaut sur mobile */
-#nav-links {
-  display: flex;
-  list-style: none;
-  gap: 15px;
-}
+@media (min-width: 1401px)/*768px*/ {
+  .burger-menu {
+    display: block; /* Affiche le menu burger sur mobile */
+  }
 
-#nav-links li {
-  margin: 0 10px;
-}
+  #nav-links {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+  }
 
-#nav-links a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
+  #nav-links li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  #nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+
 }
 
 /* Mobile Styles */
@@ -132,13 +140,13 @@ footer {
     display: block; /* Affiche le menu burger sur mobile */
   }
 
-  nav ul {
+  /*nav ul {
     flex-direction: column;
   }
 
   nav ul li {
     margin: 10px 0;
-  }
+  }*/
 
   section {
     width: 90%;
