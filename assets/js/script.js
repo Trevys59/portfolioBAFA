@@ -44,7 +44,7 @@ document.querySelectorAll('#nav-links a').forEach(link => {
   });
   
   // Gestion des pop-ups pour les cartes
-  const cards = document.getElementById('cardpop'); //.card
+  const cards = document.querySelectorAll('.card2');
   const popup = document.getElementById('popup');
   const popupTitle = document.getElementById('popup-title');
   const popupText = document.getElementById('popup-text');
