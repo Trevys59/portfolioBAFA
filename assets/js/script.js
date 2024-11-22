@@ -27,14 +27,16 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
   sections.forEach(section => observer.observe(section));
   
   // Menu burger : Afficher/masquer les liens de navigation
-  const burgerMenu = document.getElementById('burger-menu');
-  const navLinks = document.getElementById('nav-links');
-  
-  if (burgerMenu && navLinks) {
-    burgerMenu.addEventListener('click', () => {
-      navLinks.classList.toggle('show'); // Affiche ou masque le menu
-    });
-  }
+  document.addEventListener("DOMContentLoaded", () => {
+    const burgerMenu = document.getElementById('burger-menu');
+    const navLinks = document.getElementById('nav-links');
+    
+    if (burgerMenu && navLinks) {
+      burgerMenu.addEventListener('click', () => {
+        navLinks.classList.toggle('show'); // Affiche ou masque le menu
+      });
+    }
+  });
 
   // Fermer le menu lorsqu'un lien est cliqué
 document.querySelectorAll('#nav-links a').forEach(link => {
