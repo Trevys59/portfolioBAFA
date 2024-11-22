@@ -32,9 +32,16 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
   
   if (burgerMenu && navLinks) {
     burgerMenu.addEventListener('click', () => {
-      navLinks.classList.toggle('show');
+      navLinks.classList.toggle('show'); // Affiche ou masque le menu
     });
   }
+
+  // Fermer le menu lorsqu'un lien est cliqué
+document.querySelectorAll('#nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('show'); // Masque le menu
+    });
+  });
   
   // Gestion des pop-ups pour les cartes
   const cards = document.querySelectorAll('.card');
