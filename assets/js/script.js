@@ -30,19 +30,20 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
   document.addEventListener("DOMContentLoaded", () => {
     const burgerMenu = document.getElementById('burger-menu');
     const navLinks = document.getElementById('nav-links');
+    const navLinkItems = document.querySelectorAll('#nav-links a');
     
     if (burgerMenu && navLinks) {
       burgerMenu.addEventListener('click', () => {
         navLinks.classList.toggle('show'); // Affiche ou masque le menu
       });
     }
-  });
 
-  // Fermer le menu lorsqu'un lien est cliqué
-document.querySelectorAll('#nav-links a').forEach(link => {
-    link.addEventListener('click', () => {
-      navLinks.classList.remove('show'); // Masque le menu
+    navLinkItems.forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('show'); // Masquer le menu
+      });
     });
+
   });
   
   // Gestion des pop-ups pour les cartes
